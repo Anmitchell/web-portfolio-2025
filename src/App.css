@@ -463,7 +463,7 @@ p {
   line-height: 1.6;
 }
 
-.experience-item, .project {
+.experience-item {
   margin-bottom: 2rem;
   padding: 1.5rem;
   background-color: transparent;
@@ -471,23 +471,52 @@ p {
   transition: all 0.3s ease;
 }
 
-.experience-item:hover, .project:hover {
+.experience-item:hover {
   background-color: var(--surface-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
 
-.experience-item h3, .project h3 {
+.experience-item h3 {
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
-.company, .duration {
+.experience-item .company {
   color: var(--text-tertiary);
-  margin: 0.5rem 0;
+  margin-bottom: 0.25rem;
 }
 
-.duration {
+.experience-item .duration {
+  color: var(--text-tertiary);
   font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.experience-item li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.experience-skill {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
 }
 
 /* ===== HERO SECTION ===== */
@@ -650,6 +679,22 @@ p {
   background-color: var(--primary-color-light);
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius-sm);
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-skill {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -896,6 +941,16 @@ p {
 
   .project-image {
     aspect-ratio: 16/9;
+  }
+
+  .project-skill {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .experience-skill {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
   }
 }
 

@@ -99,6 +99,14 @@ function App() {
                   <li>Improved system performance by 40% through optimization</li>
                   <li>Mentored junior developers and conducted code reviews</li>
                 </ul>
+                <ul className='experience-skills'>
+                  <li className='experience-skill'>React</li>
+                  <li className='experience-skill'>Node.js</li>
+                  <li className='experience-skill'>AWS</li>
+                  <li className='experience-skill'>Docker</li>
+                  <li className='experience-skill'>Kubernetes</li>
+                  <li className='experience-skill'>TypeScript</li>
+                </ul>
               </div>
 
               <div className='experience-item'>
@@ -111,6 +119,14 @@ function App() {
                   <li>Collaborated with cross-functional teams to deliver features</li>
                   <li>Participated in agile development processes</li>
                 </ul>
+                <ul className='experience-skills'>
+                  <li className='experience-skill'>React</li>
+                  <li className='experience-skill'>Node.js</li>
+                  <li className='experience-skill'>MongoDB</li>
+                  <li className='experience-skill'>Jest</li>
+                  <li className='experience-skill'>Jenkins</li>
+                  <li className='experience-skill'>Git</li>
+                </ul>
               </div>
 
               <div className='experience-item'>
@@ -122,6 +138,13 @@ function App() {
                   <li>Worked on frontend and backend development tasks</li>
                   <li>Participated in code reviews and team meetings</li>
                   <li>Learned and implemented best practices in software development</li>
+                </ul>
+                <ul className='experience-skills'>
+                  <li className='experience-skill'>JavaScript</li>
+                  <li className='experience-skill'>HTML/CSS</li>
+                  <li className='experience-skill'>Python</li>
+                  <li className='experience-skill'>SQL</li>
+                  <li className='experience-skill'>Git</li>
                 </ul>
               </div>
             </section>
@@ -149,6 +172,14 @@ function App() {
                     <li>Developed secure payment processing system</li>
                     <li>Created responsive user interface</li>
                   </ul>
+                  <ul className='project-skills'>
+                    <li className='project-skill'>React</li>
+                    <li className='project-skill'>Node.js</li>
+                    <li className='project-skill'>MongoDB</li>
+                    <li className='project-skill'>Express</li>
+                    <li className='project-skill'>Stripe API</li>
+                    <li className='project-skill'>JWT</li>
+                  </ul>
                 </div>
               </div>
 
@@ -164,6 +195,13 @@ function App() {
                     <li>Drag-and-drop task organization</li>
                     <li>User role management</li>
                   </ul>
+                  <ul className='project-skills'>
+                    <li className='project-skill'>React</li>
+                    <li className='project-skill'>Firebase</li>
+                    <li className='project-skill'>Material-UI</li>
+                    <li className='project-skill'>Redux</li>
+                    <li className='project-skill'>Firestore</li>
+                  </ul>
                 </div>
               </div>
 
@@ -178,6 +216,13 @@ function App() {
                     <li>Interactive weather maps</li>
                     <li>Location-based weather alerts</li>
                     <li>Historical weather data analysis</li>
+                  </ul>
+                  <ul className='project-skills'>
+                    <li className='project-skill'>React</li>
+                    <li className='project-skill'>OpenWeather API</li>
+                    <li className='project-skill'>Chart.js</li>
+                    <li className='project-skill'>Geolocation API</li>
+                    <li className='project-skill'>Tailwind CSS</li>
                   </ul>
                 </div>
               </div>
@@ -196,6 +241,13 @@ function App() {
                         <li>Interactive charts and graphs</li>
                         <li>Custom reporting dashboard</li>
                       </ul>
+                      <ul className='project-skills'>
+                        <li className='project-skill'>React</li>
+                        <li className='project-skill'>D3.js</li>
+                        <li className='project-skill'>Twitter API</li>
+                        <li className='project-skill'>Python</li>
+                        <li className='project-skill'>Pandas</li>
+                      </ul>
                     </div>
                   </div>
 
@@ -210,6 +262,13 @@ function App() {
                         <li>Custom workout routines</li>
                         <li>Progress tracking and analytics</li>
                         <li>Social sharing features</li>
+                      </ul>
+                      <ul className='project-skills'>
+                        <li className='project-skill'>React Native</li>
+                        <li className='project-skill'>Firebase</li>
+                        <li className='project-skill'>Redux</li>
+                        <li className='project-skill'>HealthKit API</li>
+                        <li className='project-skill'>Google Fit API</li>
                       </ul>
                     </div>
                   </div>
