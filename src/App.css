@@ -611,6 +611,12 @@ p {
   align-items: start;
 }
 
+.project:hover {
+  background-color: var(--surface-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
 .project-image {
   width: 100%;
   aspect-ratio: 16/9;
