@@ -27,7 +27,8 @@ function App() {
                 const experienceSection = document.getElementById('experience') as HTMLElement;
                 const rightSection = document.querySelector('.right-section') as HTMLElement;
                 if (experienceSection && rightSection) {
-                  const offset = experienceSection.offsetTop - rightSection.offsetTop - 96; // 6rem = 96px
+                  const headerHeight = window.innerWidth <= 768 ? 48 : 0; // 3rem = 48px
+                  const offset = experienceSection.offsetTop - rightSection.offsetTop - 96 - headerHeight;
                   rightSection.scrollTo({ top: offset, behavior: 'smooth' });
                 }
               }}>
@@ -37,7 +38,8 @@ function App() {
                 const projectsSection = document.getElementById('projects') as HTMLElement;
                 const rightSection = document.querySelector('.right-section') as HTMLElement;
                 if (projectsSection && rightSection) {
-                  const offset = projectsSection.offsetTop - rightSection.offsetTop - 96; // 6rem = 96px
+                  const headerHeight = window.innerWidth <= 768 ? 48 : 0; // 3rem = 48px
+                  const offset = projectsSection.offsetTop - rightSection.offsetTop - 96 - headerHeight;
                   rightSection.scrollTo({ top: offset, behavior: 'smooth' });
                 }
               }}>
@@ -64,7 +66,7 @@ function App() {
         <div className='right-section'>
           <div className='content'>
             <section id="about">
-              <h2>About Me</h2>
+              <h2>About</h2>
               <p>I am a passionate software engineer with a strong focus on creating efficient and user-friendly applications. My journey in technology began with a deep curiosity about how things work, which led me to pursue a career in software development.</p>
               
               <h3>Technical Skills</h3>
@@ -85,7 +87,7 @@ function App() {
             </section>
 
             <section id="experience">
-              <h2>Professional Experience</h2>
+              <h2>Experience</h2>
               
               <div className='experience-item'>
                 <h3>Senior Software Engineer</h3>
@@ -126,7 +128,7 @@ function App() {
 
             <section id="projects">
               <div className="projects-header">
-                <h2>Featured Projects</h2>
+                <h2>Projects</h2>
                 <button 
                   className="view-all-btn"
                   onClick={() => setShowAllProjects(!showAllProjects)}
@@ -190,6 +192,15 @@ function App() {
               )}
             </section>
           </div>
+          <footer className='footer'>
+            <button 
+              className='contact-btn'
+              onClick={() => window.location.href = 'mailto:your.email@example.com'}
+            >
+              Contact Me
+            </button>
+            <p className='copyright'>© {new Date().getFullYear()} Avary Mitchell. All rights reserved.</p>
+          </footer>
         </div>
       </div>
     </div>
