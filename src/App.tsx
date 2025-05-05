@@ -138,55 +138,80 @@ function App() {
               </div>
               
               <div className='project'>
-                <h3>E-Commerce Platform</h3>
-                <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.</p>
-                <ul>
-                  <li>Implemented real-time inventory management</li>
-                  <li>Developed secure payment processing system</li>
-                  <li>Created responsive user interface</li>
-                </ul>
+                <div className='project-image'>
+                  <img src="https://placehold.co/600x400/2e7d32/ffffff?text=E-Commerce" alt="E-Commerce Platform" />
+                </div>
+                <div className='project-content'>
+                  <h3>E-Commerce Platform</h3>
+                  <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.</p>
+                  <ul>
+                    <li>Implemented real-time inventory management</li>
+                    <li>Developed secure payment processing system</li>
+                    <li>Created responsive user interface</li>
+                  </ul>
+                </div>
               </div>
 
               <div className='project'>
-                <h3>Task Management App</h3>
-                <p>A collaborative task management application built with React and Firebase. Allows teams to organize, track, and manage projects effectively.</p>
-                <ul>
-                  <li>Real-time updates using Firebase</li>
-                  <li>Drag-and-drop task organization</li>
-                  <li>User role management</li>
-                </ul>
+                <div className='project-image'>
+                  <img src="https://placehold.co/600x400/1b5e20/ffffff?text=Task+App" alt="Task Management App" />
+                </div>
+                <div className='project-content'>
+                  <h3>Task Management App</h3>
+                  <p>A collaborative task management application built with React and Firebase. Allows teams to organize, track, and manage projects effectively.</p>
+                  <ul>
+                    <li>Real-time updates using Firebase</li>
+                    <li>Drag-and-drop task organization</li>
+                    <li>User role management</li>
+                  </ul>
+                </div>
               </div>
 
               <div className='project'>
-                <h3>Weather Dashboard</h3>
-                <p>A weather application that provides detailed forecasts and historical weather data. Built with React and integrated with multiple weather APIs.</p>
-                <ul>
-                  <li>Interactive weather maps</li>
-                  <li>Location-based weather alerts</li>
-                  <li>Historical weather data analysis</li>
-                </ul>
+                <div className='project-image'>
+                  <img src="https://placehold.co/600x400/2e7d32/ffffff?text=Weather" alt="Weather Dashboard" />
+                </div>
+                <div className='project-content'>
+                  <h3>Weather Dashboard</h3>
+                  <p>A weather application that provides detailed forecasts and historical weather data. Built with React and integrated with multiple weather APIs.</p>
+                  <ul>
+                    <li>Interactive weather maps</li>
+                    <li>Location-based weather alerts</li>
+                    <li>Historical weather data analysis</li>
+                  </ul>
+                </div>
               </div>
 
               {showAllProjects && (
                 <>
                   <div className='project'>
-                    <h3>Social Media Analytics</h3>
-                    <p>A data visualization platform for social media metrics and trends.</p>
-                    <ul>
-                      <li>Real-time data processing</li>
-                      <li>Interactive charts and graphs</li>
-                      <li>Custom reporting dashboard</li>
-                    </ul>
+                    <div className='project-image'>
+                      <img src="https://placehold.co/600x400/1b5e20/ffffff?text=Analytics" alt="Social Media Analytics" />
+                    </div>
+                    <div className='project-content'>
+                      <h3>Social Media Analytics</h3>
+                      <p>A data visualization platform for social media metrics and trends.</p>
+                      <ul>
+                        <li>Real-time data processing</li>
+                        <li>Interactive charts and graphs</li>
+                        <li>Custom reporting dashboard</li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div className='project'>
-                    <h3>Fitness Tracker</h3>
-                    <p>A mobile-first fitness tracking application with workout planning and progress monitoring.</p>
-                    <ul>
-                      <li>Custom workout routines</li>
-                      <li>Progress tracking and analytics</li>
-                      <li>Social sharing features</li>
-                    </ul>
+                    <div className='project-image'>
+                      <img src="https://placehold.co/600x400/2e7d32/ffffff?text=Fitness" alt="Fitness Tracker" />
+                    </div>
+                    <div className='project-content'>
+                      <h3>Fitness Tracker</h3>
+                      <p>A mobile-first fitness tracking application with workout planning and progress monitoring.</p>
+                      <ul>
+                        <li>Custom workout routines</li>
+                        <li>Progress tracking and analytics</li>
+                        <li>Social sharing features</li>
+                      </ul>
+                    </div>
                   </div>
                 </>
               )}
