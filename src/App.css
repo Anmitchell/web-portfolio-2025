@@ -463,14 +463,21 @@ p {
   line-height: 1.6;
 }
 
-.project, .experience-item {
+.experience-item, .project {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: var(--surface-color);
+  background-color: transparent;
   border-radius: var(--border-radius-md);
+  transition: all 0.3s ease;
 }
 
-.project h3, .experience-item h3 {
+.experience-item:hover, .project:hover {
+  background-color: var(--surface-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.experience-item h3, .project h3 {
   margin-top: 0;
 }
 
