@@ -311,6 +311,7 @@ p {
   gap: 6rem;
   align-items: flex-start;
   position: relative;
+  overflow-y: auto;
 }
 
 .main-content {
@@ -318,8 +319,7 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 100vh;
-  overflow-y: auto;
+  height: auto;
   position: relative;
   background-color: var(--background-light);
   border-radius: var(--border-radius-lg);
