@@ -5,25 +5,12 @@ export interface Education {
 }
 
 export interface AboutData {
-  bio: string;
-  skills: string[];
-  education: Education;
-  interests: string;
+  name: string;
+  title: string;
+  description: string;
 }
 
 export const aboutData: AboutData = {
-  bio: 'I am a passionate software engineer with a strong focus on creating efficient and user-friendly applications. My journey in technology began with a deep curiosity about how things work, which led me to pursue a career in software development.',
-  skills: [
-    'Frontend Development: React, TypeScript, HTML5, CSS3',
-    'Backend Development: Node.js, Python, Java',
-    'Database: SQL, MongoDB, PostgreSQL',
-    'DevOps: Docker, AWS, CI/CD',
-    'Version Control: Git, GitHub',
-  ],
-  education: {
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'University of Technology',
-    years: '2018-2022',
-  },
-  interests: "When I'm not coding, I enjoy contributing to open-source projects, learning new technologies, and participating in hackathons. I'm also passionate about teaching and mentoring aspiring developers.",
+ 
+  description: 'An enthusiastic developer with a fresh perspective and a hunger for learning. I thrive in collaborative environments and am passionate about writing clean, maintainable code. Eager to contribute to meaningful projects and grow alongside experienced teams.'
 }; 
