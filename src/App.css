@@ -551,6 +551,12 @@ p {
   max-width: 600px;
 }
 
+#about,
+#experience,
+#projects {
+  scroll-margin-top: 96px;
+}
+
 /* ===== ABOUT SECTION ===== */
 .about {
   display: grid;

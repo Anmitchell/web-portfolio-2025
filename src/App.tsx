@@ -20,50 +20,24 @@ function App() {
               <nav className='navigation'>
                 <button
                   onClick={() => {
-                    const mainContent = document.querySelector('.main-content');
-                    mainContent?.scrollTo({ top: 0, behavior: 'smooth' });
+                    const aboutSection = document.getElementById('about');
+                    aboutSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
                   About
                 </button>
                 <button
                   onClick={() => {
-                    const experienceSection = document.getElementById(
-                      'experience'
-                    ) as HTMLElement;
-                    const mainContent = document.querySelector(
-                      '.main-content'
-                    ) as HTMLElement;
-                    if (experienceSection && mainContent) {
-                      const headerHeight = window.innerWidth <= 768 ? 48 : 0; // 3rem = 48px
-                      const offset =
-                        experienceSection.offsetTop -
-                        mainContent.offsetTop -
-                        96 -
-                        headerHeight;
-                      mainContent.scrollTo({ top: offset, behavior: 'smooth' });
-                    }
+                    const experienceSection = document.getElementById('experience');
+                    experienceSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
                   Experience
                 </button>
                 <button
                   onClick={() => {
-                    const projectsSection = document.getElementById(
-                      'projects'
-                    ) as HTMLElement;
-                    const mainContent = document.querySelector(
-                      '.main-content'
-                    ) as HTMLElement;
-                    if (projectsSection && mainContent) {
-                      const headerHeight = window.innerWidth <= 768 ? 48 : 0; // 3rem = 48px
-                      const offset =
-                        projectsSection.offsetTop -
-                        mainContent.offsetTop -
-                        96 -
-                        headerHeight;
-                      mainContent.scrollTo({ top: offset, behavior: 'smooth' });
-                    }
+                    const projectsSection = document.getElementById('projects');
+                    projectsSection?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
                   Projects
