@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import LeftSection from './components/LeftSection';
-import RightSection from './components/RightSection';
+import LeftSection from './components/LeftSection/LeftSection';
+import RightSection from './components/RightSection/RightSection';
 
 function App() {
   return (

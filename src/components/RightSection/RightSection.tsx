@@ -1,11 +1,11 @@
 import React from 'react';
-import About from './About/About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Footer from './Footer';
-import { initialProjects, additionalProjects } from '../data/projects';
-import { experiences } from '../data/experiences';
-import { aboutData } from '../data/about';
+import About from '../About/About';
+import Experience from '../Experience/Experience';
+import Projects from '../Proj/Projects';
+import Footer from '../Footer/Footer';
+import { initialProjects, additionalProjects } from '../../data/projects';
+import { experiences } from '../../data/experiences';
+import { aboutData } from '../../data/about';
 
 const RightSection = () => {
   return (
@@ -23,4 +23,4 @@ const RightSection = () => {
   );
 };
 
-export default RightSection; 
+export default RightSection;

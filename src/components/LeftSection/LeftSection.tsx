@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Navigation from './Navigation';
-import SocialLinks from './SocialLinks';
-import { socialLinks } from '../data/socialLinks';
+import Header from '../Header/Header';
+import Navigation from '../NavigationBar/Navigation';
+import SocialLinks from '../SocialLinks';
+import { socialLinks } from '../../data/socialLinks';
 
 const LeftSection = () => {
   const navigationSections = [
@@ -20,4 +20,4 @@ const LeftSection = () => {
   );
 };
 
-export default LeftSection; 
+export default LeftSection;
