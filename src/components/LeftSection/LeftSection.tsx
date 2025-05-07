@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Navigation from '../NavigationBar/Navigation';
-import SocialLinks from '../SocialLinks';
+import SocialLinks from '../SocialLinks/SocialLinks';
 import { socialLinks } from '../../data/socialLinks';
 
 const LeftSection = () => {
