@@ -5,7 +5,7 @@ interface AboutProps {
   description: string;
 }
 
-const About: React.FC<AboutProps> = ({description }) => {
+const About: React.FC<AboutProps> = ({ description }) => {
   return (
     <section id='about' className={styles.about}>
       <h2 className={styles.sectionTitle}>About</h2>
@@ -18,4 +18,4 @@ const About: React.FC<AboutProps> = ({description }) => {
   );
 };
 
-export default About; 
+export default About;

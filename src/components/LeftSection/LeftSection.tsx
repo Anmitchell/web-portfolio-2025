@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Navigation from '../NavigationBar/Navigation';
-import SocialLinks from '../SocialLinks/SocialLinks';
+import { Header, NavigationBar, SocialLinks } from '../index';
 import { socialLinks } from '../../data/socialLinks';
 
 const LeftSection = () => {
@@ -14,7 +12,7 @@ const LeftSection = () => {
   return (
     <div className='left-section'>
       <Header name='Avary Mitchell' title='Software Engineer' />
-      <Navigation sections={navigationSections} />
+      <NavigationBar sections={navigationSections} />
       <SocialLinks links={socialLinks} />
     </div>
   );

@@ -1,0 +1,10 @@
+export { default as About } from './About';
+export { default as Experience } from './Experience';
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
+export { default as LeftSection } from './LeftSection';
+export { default as NavigationBar } from './Navigation';
+export { default as Projects } from './Proj';
+export { default as RightSection } from './RightSection';
+export { default as SocialIcons } from './SocialIcons';
+export { default as SocialLinks } from './SocialLinks';
