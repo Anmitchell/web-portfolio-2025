@@ -1,7 +1,6 @@
-import React from 'react';
 import { Header, NavigationBar, SocialLinks } from '../index';
 import { socialLinks } from '../../data/socialLinks';
-
+import styles from './LeftSection.module.css';
 const LeftSection = () => {
   const navigationSections = [
     { id: 'about', label: 'About' },
@@ -10,7 +9,7 @@ const LeftSection = () => {
   ];
 
   return (
-    <div className='left-section'>
+    <div className={styles['left-section']}>
       <Header name='Avary Mitchell' title='Software Engineer' />
       <NavigationBar sections={navigationSections} />
       <SocialLinks links={socialLinks} />

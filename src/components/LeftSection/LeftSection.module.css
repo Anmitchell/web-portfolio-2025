@@ -1,0 +1,10 @@
+.left-section {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    position: sticky;
+    top: 0;
+  }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Projects.module.css';
 
 interface Project {
   title: string;
@@ -21,10 +22,10 @@ const Projects: React.FC<ProjectsProps> = ({
 
   return (
     <section id='projects'>
-      <div className='projects-header'>
+      <div className={styles['projects-header']}>
         <h2>Projects</h2>
         <button
-          className='view-all-btn'
+          className={styles['view-all-btn']}
           onClick={() => setShowAllProjects(!showAllProjects)}
         >
           {showAllProjects ? 'Show Less' : 'View All Projects'}
@@ -32,11 +33,11 @@ const Projects: React.FC<ProjectsProps> = ({
       </div>
 
       {initialProjects.map((project, index) => (
-        <div key={index} className='project'>
-          <div className='project-image'>
+        <div key={index} className={styles['project']}>
+          <div className={styles['project-image']}>
             <img src={project.imageUrl} alt={project.title} />
           </div>
-          <div className='project-content'>
+          <div className={styles['project-content']}>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <ul>
@@ -44,9 +45,9 @@ const Projects: React.FC<ProjectsProps> = ({
                 <li key={idx}>{feature}</li>
               ))}
             </ul>
-            <ul className='project-skills'>
+                <ul className={styles['project-skills']}>
               {project.skills.map((skill, idx) => (
-                <li key={idx} className='project-skill'>
+                <li key={idx} className={styles['project-skill']}>
                   {skill}
                 </li>
               ))}
@@ -58,11 +59,11 @@ const Projects: React.FC<ProjectsProps> = ({
       {showAllProjects && (
         <>
           {additionalProjects.map((project, index) => (
-            <div key={index} className='project'>
-              <div className='project-image'>
+            <div key={index} className={styles['project']}>
+              <div className={styles['project-image']}>
                 <img src={project.imageUrl} alt={project.title} />
               </div>
-              <div className='project-content'>
+              <div className={styles['project-content']}>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <ul>
@@ -70,9 +71,9 @@ const Projects: React.FC<ProjectsProps> = ({
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
-                <ul className='project-skills'>
+                <ul className={styles['project-skills']}>
                   {project.skills.map((skill, idx) => (
-                    <li key={idx} className='project-skill'>
+                    <li key={idx} className={styles['project-skill']}>
                       {skill}
                     </li>
                   ))}

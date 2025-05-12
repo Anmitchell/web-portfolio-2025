@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Navigation.module.css';
 
 interface NavigationProps {
   sections: {
@@ -14,8 +15,8 @@ const Navigation: React.FC<NavigationProps> = ({ sections }) => {
   };
 
   return (
-    <div className='nav-section'>
-      <nav className='navigation'>
+    <div className={styles['nav-section']}>
+      <nav className={styles['navigation']}>
         {sections.map((section) => (
           <button
             key={section.id}
