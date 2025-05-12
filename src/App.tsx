@@ -1,16 +1,14 @@
 import './App.css';
-import { LeftSection, RightSection } from '@/components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home } from '@/pages';
 
 function App() {
   return (
-    <div className='app'>
-      <div className='container'>
-        <div className='main-content'>
-          <LeftSection />
-          <RightSection />
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
