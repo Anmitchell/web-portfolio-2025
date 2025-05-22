@@ -1,0 +1,36 @@
+.contact {
+  text-align: center;
+}
+
+.contactTitle {
+  margin-bottom: var(--spacing-md);
+}
+
+.contactDescription {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.contactButton {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-speed) var(--transition-ease);
+}
+
+.contactButton:hover {
+  background-color: var(--primary-color-light);
+}
+
+@media (max-width: 768px) {
+  .contactButton {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.8rem;
+  }
+} 

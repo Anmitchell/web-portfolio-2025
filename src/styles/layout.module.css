@@ -1,0 +1,128 @@
+.mainContent::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  padding: 0;
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+  flex-direction: column;
+  gap: 0;
+}
+
+.leftSection {
+  width: 100%;
+  height: auto;
+  position: static;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  order: 1;
+}
+
+.rightSection {
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+  order: 2;
+}
+
+.content {
+  padding: 0;
+}
+
+.content section {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.content section h2 {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-light);
+  padding: 1rem 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.projectsHeader {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-light);
+  padding: 1rem 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.projectsHeader h2 {
+  position: static;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mainContent {
+    max-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    border-radius: 0;
+    overflow: visible;
+    flex-direction: column;
+  }
+
+  .leftSection {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    order: 1;
+  }
+
+  .rightSection {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    order: 2;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .content section {
+    margin: 2rem 0;
+    position: relative;
+  }
+
+  .content section h2 {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-light);
+    padding: 1rem 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .projectsHeader {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-light);
+    padding: 1rem 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .projectsHeader h2 {
+    position: static;
+    padding: 0;
+  }
+} 

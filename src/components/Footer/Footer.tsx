@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Footer.module.css';
 
 interface FooterProps {
   email: string;
@@ -7,14 +8,14 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ email, name }) => {
   return (
-    <footer className='footer'>
+    <footer className={styles.footer}>
       <button
-        className='contact-btn'
+        className={styles.contactBtn}
         onClick={() => (window.location.href = `mailto:${email}`)}
       >
         Contact Me
       </button>
-      <p className='copyright'>
+      <p className={styles.copyright}>
         © {new Date().getFullYear()} {name}. All rights reserved.
       </p>
     </footer>
